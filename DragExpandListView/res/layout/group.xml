@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/group_layout"
+    android:background="@drawable/group_focus"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical" >
+        <TextView android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#009CCE"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/group_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/group_name"
+            android:layout_alignBottom="@+id/group_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:text="(1)"
+            android:visibility="visible"
+            android:textColor="#ADB5AD"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/group_count_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_add"
+            android:layout_alignBaseline="@+id/group_name"
+            android:layout_alignBottom="@+id/group_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:textSize="20sp" />
+
+        <View 
+            android:layout_alignParentBottom="true"
+			android:layout_width="fill_parent" 
+			android:layout_height="1dip" 
+			android:background="?android:attr/listDivider" /> 
+    </RelativeLayout>
+    
+
+</LinearLayout>
